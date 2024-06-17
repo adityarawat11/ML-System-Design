@@ -994,6 +994,29 @@ langchain-core = ">=0.2.0,<0.3.0"
 extended-testing = ["beautifulsoup4 (>=4.12.3,<5.0.0)", "lxml (>=4.9.3,<6.0)"]
 
 [[package]]
+name = "langserve"
+version = "0.2.2"
+description = ""
+optional = false
+python-versions = "<4.0.0,>=3.8.1"
+files = [
+    {file = "langserve-0.2.2-py3-none-any.whl", hash = "sha256:e2b1b4b5b6108a82a38e5a54468737a07ca21f448174ec594992bc6d215a14f5"},
+    {file = "langserve-0.2.2.tar.gz", hash = "sha256:8df558c157718963c647c6f7ec302f75811c88585f1f3a34d65662e1962c1957"},
+]
+
+[package.dependencies]
+httpx = ">=0.23.0"
+langchain-core = ">=0.1,<0.3"
+orjson = ">=2"
+pydantic = ">=1"
+pyproject-toml = ">=0.0.10,<0.0.11"
+
+[package.extras]
+all = ["fastapi (>=0.90.1,<1)", "sse-starlette (>=1.3.0,<2.0.0)"]
+client = ["fastapi (>=0.90.1,<1)"]
+server = ["fastapi (>=0.90.1,<1)", "sse-starlette (>=1.3.0,<2.0.0)"]
+
+[[package]]
 name = "langsmith"
 version = "0.1.77"
 description = "Client library to connect to the LangSmith LLM Tracing and Evaluation Platform."
@@ -1902,6 +1925,23 @@ files = [
 windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
+name = "pyproject-toml"
+version = "0.0.10"
+description = "Project intend to implement PEP 517, 518, 621, 631 and so on."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyproject-toml-0.0.10.tar.gz", hash = "sha256:f0ce0e9934ecb00c0e529b4a1c380edd3034c4be65516769c5f080bdb23dfcb3"},
+    {file = "pyproject_toml-0.0.10-py3-none-any.whl", hash = "sha256:257a7070617e1a0bcfd8f790817b30bd9193876023a9b9e7a6b4fc976acf4c3e"},
+]
+
+[package.dependencies]
+jsonschema = "*"
+setuptools = ">=42"
+toml = "*"
+wheel = "*"
+
+[[package]]
 name = "pytest"
 version = "7.4.4"
 description = "pytest: simple powerful testing with Python"
@@ -2738,6 +2778,20 @@ files = [
 watchmedo = ["PyYAML (>=3.10)"]
 
 [[package]]
+name = "wheel"
+version = "0.43.0"
+description = "A built-package format for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "wheel-0.43.0-py3-none-any.whl", hash = "sha256:55c570405f142630c6b9f72fe09d9b67cf1477fcf543ae5b8dcb1f5b7377da81"},
+    {file = "wheel-0.43.0.tar.gz", hash = "sha256:465ef92c69fa5c5da2d1cf8ac40559a8c940886afcef87dcf14b9470862f1d85"},
+]
+
+[package.extras]
+test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
+
+[[package]]
 name = "yarl"
 version = "1.9.4"
 description = "Yet another URL library"
@@ -2843,4 +2897,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ade9a44a9ca3d440e5d17ac07c4c3ba32578006e679675297aa684bfc926f99d"
+content-hash = "ba2db019e215538133df13c56d24671e4aa1b87f7bf04a7da9269b3900ac6a62"
